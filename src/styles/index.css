@@ -1,3 +1,39 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Noto Sans', 'Arial';
+}
+
+h1 {
+	font-family: 'Noto Serif';
+}
+
+html {
+	overflow-y: scroll;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 body {
-	margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Viewport height */
+}
+
+main {
+  flex: 1; /* Take up remaining space */
+}
+
+img {
+	max-width: 400px;
+}
+
+/* Optional: Style for clarity */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
