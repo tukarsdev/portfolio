@@ -19,7 +19,12 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Viewport height */
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #001a0e, #171a18);
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+  color: #f0f0f0;
 }
 
 main {
