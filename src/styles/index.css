@@ -62,16 +62,32 @@ header::before {
 header h1 {
   margin: 0;
   position: relative;
+  width: fit-content;
+  margin: auto;
   z-index: 1;
   display: block;
   text-align: center;
   font-family: 'Noto Serif', serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 8vh;
   color: white;
   top: 50%;
   transform: translateY(-50%);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/*
+header h1::before {
+  content: '';
+  position: absolute;
+  inset: -0.1em -0.2em;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  filter: blur(2px);
+  z-index: -1;
+}
+  */
 
 @media (min-aspect-ratio: 18/9) {
   header::before {
